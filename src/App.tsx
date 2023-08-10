@@ -1,9 +1,14 @@
 import React from 'react';
+//import { TryChart } from './Component/TryTimeseriesCharts';
+import { MinimumChart } from './Component/MinimumChart';
+import { Rows } from './Component/ChartRow';
 
 function App() {
   return (
     <div>
-      <p>reactの練習</p>
+      {/*<TryChart />*/}
+      {/*<MinimumChart />*/}
+      <Rows />
     </div>
   );
 }
