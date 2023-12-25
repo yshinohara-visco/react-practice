@@ -1,5 +1,5 @@
 # react-practice
 
-react,typescriptの練習や確認を行う
+react,typescript の練習や確認を行う
 
-プロジェクトごとにリポジトリを分けていたらGitHubが混雑したのでブランチで良い感じにできないか？
+Paper.js の動作確認や練習など

@@ -1,11 +1,10 @@
-import React from 'react';
+import { Stack } from "@mui/material";
+import { PanelPaper } from "./PanelPaper";
 
-function App() {
-  return (
-    <div>
-      <p>reactの練習</p>
-    </div>
-  );
-}
-
-export default App;
+export const App = () => {
+    return (
+        <Stack>
+            <PanelPaper />
+        </Stack>
+    );
+};
