@@ -1,36 +1,40 @@
 import React from "react";
-import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
-
-i18n.use(initReactI18next).init({
-    resources: {
-        en: {
-            translation: {
-                "Welcome to React": "Welcome to React and react-i18next",
-            },
-        },
-        ja: {
-            translation: {
-                "Welcome to React": "React と react-i18next へようこそ",
-            },
-        },
-        hoge: {
-            translation: {
-                "Welcome to React": "React と react-i18next へhogehoge",
-            },
-        },
-    },
-    lng: "hoge",
-    fallbackLng: "en",
-    interpolation: { escapeValue: false },
-});
+import { useTranslation } from "react-i18next";
 
 function App() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const [num, setNum] = React.useState(0);
 
     return (
         <div>
             <h1>{t("Welcome to React")}</h1>
+            <h2>
+                {t("Numの値は{{num}}です", {
+                    num,
+                })}
+            </h2>
+            <button
+                onClick={() => {
+                    i18n.changeLanguage("en");
+                }}
+            >
+                en
+            </button>
+            <button
+                onClick={() => {
+                    i18n.changeLanguage("ja");
+                }}
+            >
+                ja
+            </button>
+            <button
+                onClick={() => {
+                    i18n.changeLanguage("hoge");
+                }}
+            >
+                hoge
+            </button>
+            <button onClick={() => setNum(num + 1)}>+</button>
         </div>
     );
 }
