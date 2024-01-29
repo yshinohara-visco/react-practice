@@ -1,5 +1,3 @@
 # react-practice
 
-react,typescriptの練習や確認を行う
-
-プロジェクトごとにリポジトリを分けていたらGitHubが混雑したのでブランチで良い感じにできないか？
+react-i18next における検証を行う
