@@ -3,13 +3,13 @@ import { initReactI18next } from 'react-i18next';
 
 const resources = {
     en: {
-        translation: require('./en.json'),
+        translation: require('./locales/en/translation.json'),
     },
     ja: {
-        translation: require('./ja.json'),
+        translation: require('./locales/ja/translation.json'),
     },
     hoge: {
-        translation: require('./hoge.json'),
+        translation: require('./locales/hoge/translation.json'),
     }
 }
 

@@ -17,3 +17,7 @@ yarn i18next-extract で抽出の実行
 警告が出たので yarn add -D @babel/plugin-proposal-private-property-in-object で追加
 
 良く分からないが scripts の内容は "i18next-extract": "set NODE_ENV=development&& babel src --extensions \".js,.jsx,.ts,.tsx\"" だと一応機能した。が、ファイルの内容が端末に出力されるのが邪魔
+
+babel-plugin-i18next-extract がややこしかったので i18next-parser を試した。
+yarn add -D i18next-parser
+追加するライブラリは一つで、設定と端末の出力もシンプルで良いかも

@@ -1,0 +1,5 @@
+{
+  "Welcome to React": "welcome hoge",
+  "Numの値は{{num}}です": " hoge {{num}} fuga",
+  "test message": "test hoge"
+}
