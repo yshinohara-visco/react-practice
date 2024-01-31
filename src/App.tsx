@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { Test } from "./components/test";
 
 function App() {
     const { t, i18n } = useTranslation();
@@ -13,6 +14,7 @@ function App() {
                     num,
                 })}
             </h2>
+            <Test />
             <button
                 onClick={() => {
                     i18n.changeLanguage("en");

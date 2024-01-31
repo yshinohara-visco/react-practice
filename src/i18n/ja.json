@@ -1,0 +1,5 @@
+{
+  "Numの値は{{num}}です": "Numの値は{{num}}です",
+  "Welcome to React": "React と react-i18next へようこそ",
+  "test message": "テストです"
+}

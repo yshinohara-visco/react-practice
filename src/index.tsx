@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./i18n"; //i18nの初期化
+import "./i18n/config"; //i18nの初期化
 import App from "./App";
 
 const root = ReactDOM.createRoot(

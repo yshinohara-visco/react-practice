@@ -22,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "i18next-extract": "set NODE_ENV=development&& babel src --extensions \".js,.jsx,.ts,.tsx\""
+
   },
   "eslintConfig": {
     "extends": [
@@ -40,6 +42,29 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "babel-plugin-i18next-extract": "^0.10.0"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+      [
+        "i18next-extract",
+        {
+          "locales": [
+            "ja",
+            "en",
+            "hoge"
+          ],
+          "outputPath": "./src/i18n/{{locale}}.json"
+        }
+      ]
     ]
   }
 }
