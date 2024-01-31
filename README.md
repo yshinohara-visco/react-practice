@@ -21,3 +21,6 @@ yarn i18next-extract で抽出の実行
 babel-plugin-i18next-extract がややこしかったので i18next-parser を試した。
 yarn add -D i18next-parser
 追加するライブラリは一つで、設定と端末の出力もシンプルで良いかも
+
+i18next-http-backend を使用することで、public/locales/$LOCALE/$NAMESPACE.json を自動で認識できるらしい。
+ファイルを後から追加したり差し替えたりしても対応できる？

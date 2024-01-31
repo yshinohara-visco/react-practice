@@ -1,22 +1,11 @@
 import i18n from 'i18next';
+import Backend from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
-
-const resources = {
-    en: {
-        translation: require('./locales/en/translation.json'),
-    },
-    ja: {
-        translation: require('./locales/ja/translation.json'),
-    },
-    hoge: {
-        translation: require('./locales/hoge/translation.json'),
-    }
-}
 
 i18n
     .use(initReactI18next)
+    .use(Backend)
     .init({
-        resources,
         lng: 'ja',
         fallbackLng: false,// フォールバックしない＝keyをそのまま表示
         returnEmptyString: false,// 空文字での定義を許可
